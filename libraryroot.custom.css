@@ -368,6 +368,21 @@ h3 {
   padding: 0 var(--vm-control-pad-x-lg) !important;
 }
 
+[class*="appdetailsplaysection_PlayBar_"] button.DialogButton.GreenPlay,
+[class*="appdetailsplaysection_PlayBar_"] .DialogButton.GreenPlay,
+[class*="appdetailsplaysection_PlayBar_"] .btn_green_white_innerfade,
+[class*="appdetailsplaysection_PlayBar_"] .btnv6_green_white_innerfade {
+  border-radius: var(--vm-pill) !important;
+  overflow: hidden !important;
+}
+
+[class*="appdetailsplaysection_PlayBar_"] button.DialogButton.GreenPlay *,
+[class*="appdetailsplaysection_PlayBar_"] .DialogButton.GreenPlay *,
+[class*="appdetailsplaysection_PlayBar_"] .btn_green_white_innerfade *,
+[class*="appdetailsplaysection_PlayBar_"] .btnv6_green_white_innerfade * {
+  border-radius: inherit !important;
+}
+
 .DesktopUI button,
 .DesktopUI .DialogButton,
 .DesktopUI [class*="Button"],
