@@ -1,0 +1,174 @@
+@import url("shared.css");
+
+.friendsui-container,
+.PopupFullWindow,
+.friendlistListContainer,
+.chatRoomListContainer,
+.chatWindow,
+.chatContainer,
+.multiChatDialog {
+  background: transparent !important;
+  color: var(--vm-text) !important;
+}
+
+.friendsui-container,
+.friendsui-container *:not(svg):not(path):not(img) {
+  font-family: var(--vm-font) !important;
+}
+
+.friendListHeaderContainer,
+.currentUserContainer,
+.titleBarContainer.ChatTabs,
+.chatHeader,
+.chatEntryControls,
+.VoiceRoomChatTitle {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-lg) !important;
+  background: linear-gradient(180deg, rgba(15, 24, 36, 0.96), rgba(12, 20, 31, 0.96)) !important;
+  backdrop-filter: blur(12px);
+}
+
+.statusHeaderGlow,
+.title-area-highlight,
+.singleWindowFocusBar,
+.insetShadow,
+._2-sgwZvgc-3h4gcUWbTNTh,
+._2hL6ssOeMwczcGsrkJWupl {
+  display: none !important;
+}
+
+.friend,
+.SteamPlayerGroupFooter,
+.ChatRoomListGroupItem,
+.chatTabList .X2iywwN7fcdh9zXpXVsrk,
+.ChatTabsBackButton,
+.chatRoomTextChannel,
+.chatRoomVoiceChannel,
+.chatRoomListGroupItem .ContextMenuButton,
+.favoriteElement,
+.quickAccessFriend {
+  border-radius: 12px !important;
+}
+
+.friend:hover,
+.SteamPlayerGroupFooter:hover,
+.friendStatusHover.online:hover,
+.friendStatusHover.ingame:hover,
+.friendStatusHover.offline:hover,
+.friendStatusHover.watchingbroadcast:hover,
+.friendStatusHover.golden:hover,
+.friendStatusHover.online.Friend_ContextMenuActive,
+.friendStatusHover.ingame.Friend_ContextMenuActive,
+.friendStatusHover.offline.Friend_ContextMenuActive,
+.friendStatusHover.watchingbroadcast.Friend_ContextMenuActive,
+.friendStatusHover.golden.Friend_ContextMenuActive,
+.ChatRoomListGroupItem:hover,
+.chatTabList .X2iywwN7fcdh9zXpXVsrk:hover {
+  background: var(--vm-hover) !important;
+}
+
+.chatRoomTextChannel:hover,
+.chatRoomVoiceChannel:hover,
+.favoriteElement:hover,
+.quickAccessFriend:hover {
+  background: var(--vm-hover) !important;
+}
+
+.groupName,
+.friendsListSectionTitle,
+.activeTab,
+.speakerName,
+.chatHeader,
+.J8J3o5BtWdX2ZAOJB2AE6,
+.currentUserContainer *,
+.chatRoomTextChannelName,
+.chatRoomVoiceChannelName,
+.persona,
+.playerName {
+  color: var(--vm-text) !important;
+}
+
+.groupCount,
+.labelHolder,
+.FriendChatTypingNotification,
+.msgText,
+.timestamp,
+.chatRoomTextChannelDesc,
+.chatRoomVoiceChannelDesc,
+.lastOnline,
+.richPresenceLabel,
+.chatEntryPlaceholder {
+  color: var(--vm-text-muted) !important;
+}
+
+.chatEntry,
+.chatWindow .chatEntry > .compactableHeight,
+.chatImageFull,
+.chatFileUploadPreviewContainer,
+.chatFileUploadProgressContainer,
+.VoiceRoomChatWindow {
+  border-radius: var(--vm-radius-md) !important;
+}
+
+.chatImageFull,
+.chatFileUploadPreviewContainer,
+.chatFileUploadProgressContainer,
+.VoiceRoomChatWindow {
+  border: 1px solid var(--vm-border) !important;
+  background: var(--vm-panel) !important;
+  padding: 10px;
+}
+
+.avatarHolder .avatarStatus {
+  display: none !important;
+}
+
+.offline ._1p_QrI3ixF-RAwnxad9pEm,
+.online ._1p_QrI3ixF-RAwnxad9pEm,
+.ingame ._1p_QrI3ixF-RAwnxad9pEm {
+  border-radius: 12px !important;
+}
+
+.offline ._1p_QrI3ixF-RAwnxad9pEm {
+  border: 1px solid rgba(237, 244, 251, 0.22) !important;
+}
+
+.online ._1p_QrI3ixF-RAwnxad9pEm {
+  border: 1px solid rgba(166, 243, 217, 0.48) !important;
+}
+
+.ingame ._1p_QrI3ixF-RAwnxad9pEm {
+  border: 1px solid rgba(114, 223, 189, 0.68) !important;
+}
+
+.ChatUnreadMessageIndicator .chatUnreadCircle,
+.unreadMessageViolator {
+  background: var(--vm-accent) !important;
+  color: #071a14 !important;
+  border-radius: var(--vm-pill) !important;
+}
+
+.PP7LM0Ow1K5qkR8WElLpt,
+._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  background: var(--vm-panel-strong) !important;
+}
+
+.friendlistListContainer,
+.chatRoomListContainer {
+  padding: 8px;
+}
+
+.chatHeader,
+.chatEntryControls,
+.titleBarContainer.ChatTabs {
+  margin: 8px;
+}
+
+.chatWindow .DialogButton,
+.chatWindow button,
+.friendsui-container .DialogButton,
+.friendsui-container button {
+  border-radius: var(--vm-pill) !important;
+}

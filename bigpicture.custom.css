@@ -1,0 +1,58 @@
+@import url("shared.css");
+
+html,
+body {
+  background: transparent !important;
+  color: var(--vm-text) !important;
+}
+
+body,
+body *:not(svg):not(path):not(img) {
+  font-family: var(--vm-font) !important;
+}
+
+nav,
+header,
+aside,
+section,
+article,
+[class*="Panel"],
+[class*="Card"],
+[class*="Dialog"],
+[class*="Sidebar"],
+[class*="Modal"],
+[class*="Header"],
+[class*="Footer"],
+[class*="Container"] {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-lg) !important;
+  background: var(--vm-panel) !important;
+  box-shadow: var(--vm-shadow) !important;
+}
+
+button,
+[role="button"],
+[class*="Button"],
+[class*="button"] {
+  border-radius: var(--vm-pill) !important;
+}
+
+[class*="Play"],
+[class*="Primary"],
+[class*="Confirm"],
+[class*="Install"],
+[class*="Action"] {
+  border-color: rgba(166, 243, 217, 0.28) !important;
+  background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
+  color: #092018 !important;
+}
+
+input,
+textarea,
+select,
+[class*="Tile"],
+[class*="tile"],
+[class*="Poster"],
+[class*="poster"] {
+  border-radius: var(--vm-radius-md) !important;
+}
