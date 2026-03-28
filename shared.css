@@ -38,6 +38,9 @@
   --vm-control-pad-x: 14px;
   --vm-control-pad-x-lg: 16px;
   --vm-control-pad-y: 10px;
+  --vm-surface-pad-sm: 12px;
+  --vm-surface-pad-md: 16px;
+  --vm-surface-pad-lg: 20px;
   --vm-font: "Aptos", "Segoe UI Variable Text", "Segoe UI", "Inter", "Motiva Sans", sans-serif;
   --vm-font-display: "Bahnschrift SemiBold", "Aptos Display", "Aptos", "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", sans-serif;
 }
@@ -80,6 +83,7 @@ body small {
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   box-shadow: none;
 }
 
@@ -105,6 +109,10 @@ select {
 button,
 .DialogButton,
 .general_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--vm-gap-xs);
   min-height: var(--vm-control-height-md);
   padding: 0 var(--vm-control-pad-x) !important;
   border: 1px solid var(--vm-border) !important;
@@ -112,6 +120,13 @@ button,
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)) !important;
   color: var(--vm-text) !important;
   line-height: 1.1;
+  vertical-align: middle;
+}
+
+button > *,
+.DialogButton > *,
+.general_btn > * {
+  margin: 0 !important;
 }
 
 button:hover,
@@ -143,6 +158,8 @@ h6,
   font-family: var(--vm-font-display) !important;
   color: var(--vm-text) !important;
   letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin: 0;
 }
 
 p,
@@ -159,6 +176,7 @@ label,
 [class*="MetaData"],
 [class*="metadata"] {
   color: var(--vm-text-muted) !important;
+  line-height: 1.5;
 }
 
 img,
@@ -172,6 +190,7 @@ canvas,
 [class*="poster"],
 [class*="Capsule"],
 [class*="capsule"] {
+  display: block;
   border-radius: var(--vm-radius-md);
 }
 
@@ -186,9 +205,18 @@ select {
   border-radius: var(--vm-radius-md) !important;
   background: rgba(255, 255, 255, 0.035) !important;
   color: var(--vm-text) !important;
+  line-height: 1.2;
+}
+
+._DialogInputContainer,
+.DialogTextInputBase {
+  display: flex;
+  align-items: center;
+  gap: var(--vm-gap-xs);
 }
 
 textarea {
+  display: block;
   min-height: 88px;
   padding: var(--vm-control-pad-y) var(--vm-control-pad-x) !important;
   line-height: 1.45;

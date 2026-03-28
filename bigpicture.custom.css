@@ -40,6 +40,10 @@ button,
 [role="button"],
 [class*="Button"],
 [class*="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--vm-gap-xs);
   border-radius: var(--vm-pill) !important;
   min-height: var(--vm-control-height-lg);
   padding: 0 var(--vm-control-pad-x-lg) !important;

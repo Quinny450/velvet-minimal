@@ -28,6 +28,7 @@
 .chatHeader,
 .chatEntryControls,
 .VoiceRoomChatTitle {
+  padding: 10px 12px !important;
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
   background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
@@ -64,6 +65,9 @@
 .chatRoomVoiceChannel,
 .favoriteElement,
 .quickAccessFriend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 7px 10px !important;
 }
 
@@ -115,6 +119,7 @@
 .persona,
 .playerName {
   color: var(--vm-text) !important;
+  line-height: 1.25;
 }
 
 .groupCount,
@@ -146,6 +151,16 @@
 .VoiceRoomChatWindow {
   border: 1px solid var(--vm-border-soft) !important;
   background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.chatEntry,
+.chatWindow .chatEntry > .compactableHeight {
+  padding: 10px 12px !important;
+}
+
+.chatHistory,
+.chatScrollContainer {
+  padding: 6px;
 }
 
 .chatImageFull,
@@ -203,7 +218,6 @@
 .chatEntryControls,
 .titleBarContainer.ChatTabs {
   margin: 10px 10px 0;
-  padding: 10px 12px;
 }
 
 .chatWindow {
@@ -220,6 +234,7 @@
 .friendsui-container button {
   border-radius: var(--vm-pill) !important;
   min-height: var(--vm-control-height-md);
+  padding: 0 var(--vm-control-pad-x) !important;
 }
 
 .friendsui-container .DialogTextInputBase,

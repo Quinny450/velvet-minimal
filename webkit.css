@@ -95,6 +95,7 @@ body *:not(svg):not(path):not(img) {
 .profile_customization_header,
 .apphub_CardContentTitle {
   color: var(--vm-text) !important;
+  line-height: 1.15;
 }
 
 .game_description_snippet,
@@ -109,6 +110,7 @@ body *:not(svg):not(path):not(img) {
 .persona_name_text_content,
 .commentthread_comment_author {
   color: var(--vm-text-muted) !important;
+  line-height: 1.5;
 }
 
 .wishlist_row,
@@ -147,6 +149,10 @@ select,
 .pagebtn,
 .forum_topic_reply_link,
 .commentthread_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--vm-gap-xs);
   min-height: var(--vm-control-height-md);
   padding: 0 var(--vm-control-pad-x) !important;
   border: 1px solid var(--vm-border) !important;
@@ -162,6 +168,17 @@ select,
   border-color: rgba(140, 207, 255, 0.4) !important;
   background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
   color: #07111a !important;
+}
+
+.btn_medium > *,
+.btnv6_blue_hoverfade > *,
+.btn_darkblue_white_innerfade > *,
+.btnv6_grey_black > *,
+.queue_btn_active > *,
+.pagebtn > *,
+.forum_topic_reply_link > *,
+.commentthread_btn > * {
+  margin: 0 !important;
 }
 
 img,
