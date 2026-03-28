@@ -1,0 +1,115 @@
+@import url("shared.css");
+
+html,
+body,
+.responsive_page_frame,
+.responsive_page_content,
+.page_content,
+.profile_page,
+.profile_content {
+  background: transparent !important;
+  color: var(--vm-text) !important;
+}
+
+body,
+body *:not(svg):not(path):not(img) {
+  font-family: var(--vm-font) !important;
+}
+
+.newsteamnavbar,
+.supernav_container,
+.store_nav_area,
+.responsive_page_header,
+.header_area,
+.page_header_ctn,
+.apphub_HeaderTop {
+  background: rgba(13, 19, 27, 0.92) !important;
+  border-bottom: 1px solid var(--vm-border) !important;
+  box-shadow: none !important;
+}
+
+.newsteamnavbar *,
+.supernav_container *,
+.store_nav_area *,
+.responsive_page_header * {
+  color: var(--vm-text) !important;
+}
+
+.home_page_gutter,
+.wishlist_row,
+.sale_capsule,
+.store_capsule,
+.profile_header,
+.profile_customization,
+.profile_customization_header,
+.commentthread_entry,
+.forum_topic,
+.forum_replybox,
+.review_box,
+.review_box_content,
+.game_area_purchase_game,
+.game_area_description,
+.game_meta_data,
+.apphub_Card,
+.market_listing_row,
+.inventory_iteminfo,
+.tradeoffer,
+.maincontent,
+.leftcol,
+.rightcol,
+.profile_rightcol,
+.profile_leftcol,
+.community_content,
+.game_page_autocollapse_ctn,
+.block,
+.forum_post {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-lg) !important;
+  background: linear-gradient(180deg, rgba(15, 24, 36, 0.96), rgba(12, 20, 31, 0.96)) !important;
+  box-shadow: var(--vm-shadow) !important;
+}
+
+.wishlist_row:hover,
+.sale_capsule:hover,
+.store_capsule:hover,
+.review_box:hover,
+.profile_customization:hover,
+.commentthread_entry:hover,
+.market_listing_row:hover {
+  background: rgba(19, 29, 40, 0.92) !important;
+  border-color: rgba(166, 243, 217, 0.16) !important;
+}
+
+.pageheader,
+.apphub_AppName,
+.profile_header_centered_persona,
+.forum_topic_name,
+.review_box .title,
+.profile_name,
+.profile_customization_header,
+.apphub_CardContentTitle {
+  color: var(--vm-text) !important;
+}
+
+.game_description_snippet,
+.profile_summary,
+.commentthread_comment_text,
+.forum_topic_data,
+.forum_post_body,
+.review_box .content,
+.market_listing_price,
+.inventory_iteminfo p,
+.profile_summary,
+.persona_name_text_content,
+.commentthread_comment_author {
+  color: var(--vm-text-muted) !important;
+}
+
+img,
+.store_capsule img,
+.sale_capsule img,
+.wishlist_row img,
+.review_box .thumb img,
+.market_listing_item_img img {
+  border-radius: var(--vm-radius-md);
+}
