@@ -123,7 +123,7 @@ body,
 [class*="library_AppDetailsTransitionGroup_"],
 [class*="appdetails_InnerContainer_"],
 [class*="appdetails_Container_"] {
-  padding: 14px 22px 24px !important;
+  padding: 12px 20px 22px !important;
 }
 
 [class*="gamelistsectionheader_SectionHeaderContent_"],
@@ -213,7 +213,7 @@ h3 {
 
 [class*="appdetailsplaysection_PlayBar_"] {
   margin: 16px 20px 20px !important;
-  padding: 18px 20px !important;
+  padding: 16px 18px !important;
   gap: var(--vm-gap-md);
   background: linear-gradient(180deg, rgba(20, 31, 43, 0.96), rgba(11, 18, 28, 0.98)) !important;
 }
@@ -274,7 +274,7 @@ h3 {
 }
 
 [class*="appdetailssection_Section_"] {
-  padding: 20px 22px !important;
+  padding: 18px 20px !important;
 }
 
 [class*="appdetailssection_Section_"] > * + * {
@@ -284,7 +284,7 @@ h3 {
 [class*="appdetailsfriendssection_"],
 [class*="appdetailssection_RightColumnSection_"],
 [class*="appdetailssection_SidebarSection_"] {
-  padding: 16px 18px !important;
+  padding: 14px 16px !important;
 }
 
 [class*="appdetailssection_HomeContainer_"],
@@ -340,12 +340,13 @@ h3 {
 [class*="titlebarcontrols_"] button,
 [class*="toolbar_"] button,
 [class*="button_"] {
-  min-height: 40px;
+  min-height: var(--vm-control-height-md);
 }
 
 [class*="appdetailsplaysection_PlayBar_"] button.DialogButton,
 [class*="appdetailsbutton_AppDetailsButton_"].DialogButton {
-  padding: 0 18px !important;
+  min-height: var(--vm-control-height-lg);
+  padding: 0 var(--vm-control-pad-x-lg) !important;
 }
 
 .DesktopUI button,
@@ -441,8 +442,8 @@ h3 {
 [class*="titlebarcontrols_Tab_"],
 [class*="libraryglobalnav_Tab_"],
 [class*="supernav_Label_"] {
-  min-height: 34px;
-  padding: 0 14px !important;
+  min-height: var(--vm-control-height-sm);
+  padding: 0 12px !important;
   border-radius: var(--vm-radius-sm) !important;
   color: var(--vm-text-muted) !important;
   font-size: 13px !important;
@@ -468,9 +469,9 @@ h3 {
 [class*="gamelistsearchbar_Container_"] .DialogTextInputBase,
 [class*="gamelistsearchbar_Container_"] ._DialogInputContainer,
 [class*="gamelistdropdown_Bar_"] ._DialogInputContainer {
-  min-height: 38px;
-  padding-left: 13px !important;
-  padding-right: 13px !important;
+  min-height: var(--vm-control-height-md);
+  padding-left: 12px !important;
+  padding-right: 12px !important;
   background: rgba(255, 255, 255, 0.03) !important;
   border: 1px solid var(--vm-border) !important;
 }
@@ -482,7 +483,7 @@ h3 {
 
 [class*="appdetailscommunityfeed_CommunityItem_"],
 [class*="appactivityday_Event_UniqueBorder_"] {
-  padding: 14px 16px !important;
+  padding: 12px 14px !important;
 }
 
 [class*="appdetailssection_RightColumnSection_"],
@@ -498,8 +499,8 @@ h3 {
 [class*="appdetailsactivitysection_"] .DialogTextInputBase,
 [class*="appdetailscommunityfeed_"] .DialogTextInputBase {
   min-height: 44px;
-  padding-left: 14px !important;
-  padding-right: 14px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
   background: rgba(255, 255, 255, 0.03) !important;
 }
 
@@ -528,5 +529,5 @@ h3 {
 [class*="statusbar_"] {
   background: linear-gradient(180deg, rgba(10, 16, 24, 0.94), rgba(8, 13, 20, 0.94)) !important;
   border-top: 1px solid var(--vm-border) !important;
-  min-height: 42px;
+  min-height: 40px;
 }

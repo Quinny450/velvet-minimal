@@ -41,7 +41,8 @@ button,
 [class*="Button"],
 [class*="button"] {
   border-radius: var(--vm-pill) !important;
-  min-height: 42px;
+  min-height: var(--vm-control-height-lg);
+  padding: 0 var(--vm-control-pad-x-lg) !important;
 }
 
 [class*="Play"],

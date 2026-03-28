@@ -124,7 +124,7 @@ body *:not(svg):not(path):not(img) {
 .tradeoffer,
 .profile_customization,
 .profile_header {
-  padding: 16px 18px !important;
+  padding: 14px 16px !important;
 }
 
 input,
@@ -147,6 +147,8 @@ select,
 .pagebtn,
 .forum_topic_reply_link,
 .commentthread_btn {
+  min-height: var(--vm-control-height-md);
+  padding: 0 var(--vm-control-pad-x) !important;
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-pill) !important;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)) !important;

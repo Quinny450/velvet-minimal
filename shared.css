@@ -32,6 +32,12 @@
   --vm-gap-md: 16px;
   --vm-gap-lg: 20px;
   --vm-gap-xl: 28px;
+  --vm-control-height-sm: 34px;
+  --vm-control-height-md: 38px;
+  --vm-control-height-lg: 42px;
+  --vm-control-pad-x: 14px;
+  --vm-control-pad-x-lg: 16px;
+  --vm-control-pad-y: 10px;
   --vm-font: "Aptos", "Segoe UI Variable Text", "Segoe UI", "Inter", "Motiva Sans", sans-serif;
   --vm-font-display: "Bahnschrift SemiBold", "Aptos Display", "Aptos", "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", sans-serif;
 }
@@ -99,10 +105,13 @@ select {
 button,
 .DialogButton,
 .general_btn {
+  min-height: var(--vm-control-height-md);
+  padding: 0 var(--vm-control-pad-x) !important;
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-pill) !important;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)) !important;
   color: var(--vm-text) !important;
+  line-height: 1.1;
 }
 
 button:hover,
@@ -171,10 +180,19 @@ canvas,
 input,
 textarea,
 select {
+  min-height: var(--vm-control-height-md);
+  padding: 0 var(--vm-control-pad-x) !important;
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-md) !important;
   background: rgba(255, 255, 255, 0.035) !important;
   color: var(--vm-text) !important;
+}
+
+textarea {
+  min-height: 88px;
+  padding: var(--vm-control-pad-y) var(--vm-control-pad-x) !important;
+  line-height: 1.45;
+  resize: vertical;
 }
 
 ._DialogInputContainer:hover,

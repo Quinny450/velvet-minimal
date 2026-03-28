@@ -64,7 +64,7 @@
 .chatRoomVoiceChannel,
 .favoriteElement,
 .quickAccessFriend {
-  padding: 8px 10px !important;
+  padding: 7px 10px !important;
 }
 
 .friend:hover,
@@ -195,7 +195,7 @@
 
 .friendlistListContainer,
 .chatRoomListContainer {
-  padding: 10px;
+  padding: 8px;
   background: rgba(255, 255, 255, 0.02) !important;
 }
 
@@ -203,11 +203,11 @@
 .chatEntryControls,
 .titleBarContainer.ChatTabs {
   margin: 10px 10px 0;
-  padding: 12px 14px;
+  padding: 10px 12px;
 }
 
 .chatWindow {
-  padding: 10px;
+  padding: 8px;
 }
 
 .chatEntryControls {
@@ -219,7 +219,7 @@
 .friendsui-container .DialogButton,
 .friendsui-container button {
   border-radius: var(--vm-pill) !important;
-  min-height: 38px;
+  min-height: var(--vm-control-height-md);
 }
 
 .friendsui-container .DialogTextInputBase,
