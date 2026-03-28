@@ -1,9 +1,9 @@
 {
   "name": "Velvet Minimal",
   "author": "Quinn & Codex",
-  "description": "A modern minimalist Millennium theme with calm contrast, subtle rounding, and satisfying focus states.",
-  "version": "1.0.0",
-  "tags": ["Minimal", "Modern", "Dark", "Clean"],
+  "description": "A Windows 10-inspired Millennium theme with square geometry, Segoe UI, and crisp blue-accented dark surfaces.",
+  "version": "1.1.0",
+  "tags": ["Windows 10", "Dark", "Desktop", "Square"],
   "github": {
     "owner": "Quinny450",
     "repo_name": "velvet-minimal"

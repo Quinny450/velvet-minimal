@@ -1,32 +1,32 @@
 :root {
-  --vm-bg: #061018;
-  --vm-bg-2: #0b1722;
-  --vm-bg-3: #122131;
-  --vm-bg-4: #193042;
-  --vm-bg-glow: rgba(105, 174, 247, 0.1);
-  --vm-panel: rgba(15, 24, 36, 0.9);
-  --vm-panel-soft: rgba(21, 33, 46, 0.76);
-  --vm-panel-elevated: rgba(17, 28, 40, 0.95);
-  --vm-panel-strong: rgba(8, 15, 24, 0.98);
-  --vm-hover: rgba(140, 207, 255, 0.09);
-  --vm-active: rgba(140, 207, 255, 0.16);
-  --vm-border: rgba(189, 212, 231, 0.1);
-  --vm-border-soft: rgba(189, 212, 231, 0.05);
-  --vm-border-strong: rgba(140, 207, 255, 0.24);
-  --vm-text: #edf3fa;
-  --vm-text-muted: rgba(237, 243, 250, 0.74);
-  --vm-text-soft: rgba(237, 243, 250, 0.5);
-  --vm-accent: #8ccfff;
-  --vm-accent-2: #69aef7;
-  --vm-accent-soft: rgba(140, 207, 255, 0.14);
-  --vm-shadow: 0 20px 52px rgba(0, 0, 0, 0.38);
-  --vm-shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.24);
-  --vm-radius-xs: 8px;
-  --vm-radius-sm: 10px;
-  --vm-radius-md: 14px;
-  --vm-radius-lg: 18px;
-  --vm-radius-xl: 22px;
-  --vm-pill: 999px;
+  --vm-bg: #111111;
+  --vm-bg-2: #191919;
+  --vm-bg-3: #202020;
+  --vm-bg-4: #2a2a2a;
+  --vm-bg-glow: rgba(0, 120, 215, 0.08);
+  --vm-panel: rgba(32, 32, 32, 0.94);
+  --vm-panel-soft: rgba(42, 42, 42, 0.82);
+  --vm-panel-elevated: rgba(36, 36, 36, 0.97);
+  --vm-panel-strong: rgba(18, 18, 18, 0.98);
+  --vm-hover: rgba(0, 120, 215, 0.12);
+  --vm-active: rgba(0, 120, 215, 0.2);
+  --vm-border: rgba(255, 255, 255, 0.12);
+  --vm-border-soft: rgba(255, 255, 255, 0.06);
+  --vm-border-strong: rgba(0, 120, 215, 0.46);
+  --vm-text: #f3f3f3;
+  --vm-text-muted: rgba(243, 243, 243, 0.74);
+  --vm-text-soft: rgba(243, 243, 243, 0.5);
+  --vm-accent: #0078d7;
+  --vm-accent-2: #0063b1;
+  --vm-accent-soft: rgba(0, 120, 215, 0.18);
+  --vm-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  --vm-shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --vm-radius-xs: 0px;
+  --vm-radius-sm: 0px;
+  --vm-radius-md: 0px;
+  --vm-radius-lg: 0px;
+  --vm-radius-xl: 0px;
+  --vm-pill: 0px;
   --vm-gap-xs: 6px;
   --vm-gap-sm: 8px;
   --vm-gap-md: 12px;
@@ -41,15 +41,14 @@
   --vm-surface-pad-sm: 8px;
   --vm-surface-pad-md: 12px;
   --vm-surface-pad-lg: 16px;
-  --vm-font: "Aptos", "Segoe UI Variable Text", "Segoe UI", "Inter", "Motiva Sans", sans-serif;
-  --vm-font-display: "Bahnschrift SemiBold", "Aptos Display", "Aptos", "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", sans-serif;
+  --vm-font: "Segoe UI", "Segoe UI Variable Text", "Tahoma", "Motiva Sans", sans-serif;
+  --vm-font-display: "Segoe UI Semibold", "Segoe UI", "Tahoma", "Motiva Sans", sans-serif;
 }
 
 html,
 body {
   background:
-    radial-gradient(circle at 16% 0%, var(--vm-bg-glow), transparent 24%),
-    radial-gradient(circle at 92% 12%, rgba(105, 174, 247, 0.06), transparent 20%),
+    radial-gradient(circle at 0% 0%, var(--vm-bg-glow), transparent 28%),
     linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
   color: var(--vm-text) !important;
   font-family: var(--vm-font);
@@ -92,7 +91,7 @@ a {
 }
 
 a:hover {
-  color: #deeeff !important;
+  color: #cfe8ff !important;
 }
 
 button,
@@ -134,15 +133,15 @@ button:hover,
 .general_btn:hover {
   background: var(--vm-accent-soft) !important;
   border-color: var(--vm-border-strong) !important;
-  transform: translateY(-1px);
+  transform: none;
 }
 
 button.DialogButton.GreenPlay,
 .btn_green_white_innerfade,
 .btnv6_green_white_innerfade {
-  border-color: rgba(140, 207, 255, 0.4) !important;
+  border-color: rgba(0, 120, 215, 0.7) !important;
   background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
-  color: #07111a !important;
+  color: #ffffff !important;
 }
 
 h1,
@@ -157,7 +156,7 @@ h6,
 [class*="header"] {
   font-family: var(--vm-font-display) !important;
   color: var(--vm-text) !important;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   line-height: 1.15;
   margin: 0;
 }
@@ -287,8 +286,8 @@ select,
 [class*="surface"] {
   border: 1px solid var(--vm-border);
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.96)) !important;
-  backdrop-filter: blur(16px);
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.98), rgba(24, 24, 24, 0.98)) !important;
+  backdrop-filter: none;
   box-shadow: var(--vm-shadow-soft);
 }
 
@@ -298,7 +297,7 @@ select,
 [class*="card"]:hover,
 [class*="Surface"]:hover,
 [class*="surface"]:hover {
-  border-color: rgba(140, 207, 255, 0.16);
+  border-color: rgba(0, 120, 215, 0.24);
 }
 
 hr,
@@ -310,7 +309,7 @@ hr,
 }
 
 ::selection {
-  background: rgba(140, 207, 255, 0.24);
+  background: rgba(0, 120, 215, 0.3);
   color: var(--vm-text);
 }
 
@@ -324,13 +323,13 @@ hr,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(237, 244, 251, 0.16);
+  background: rgba(255, 255, 255, 0.2);
   border: 2px solid transparent;
   border-radius: var(--vm-pill);
   background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(140, 207, 255, 0.28);
+  background: rgba(0, 120, 215, 0.4);
   background-clip: padding-box;
 }

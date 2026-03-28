@@ -19,8 +19,7 @@ body,
 
 .DesktopUI {
   background:
-    radial-gradient(circle at 14% 0%, rgba(105, 174, 247, 0.09), transparent 24%),
-    radial-gradient(circle at 100% 18%, rgba(140, 207, 255, 0.05), transparent 22%),
+    radial-gradient(circle at 0% 0%, rgba(0, 120, 215, 0.08), transparent 24%),
     linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
 }
 
@@ -29,8 +28,8 @@ body,
   padding: var(--vm-surface-pad-sm);
   border: 1px solid var(--vm-border);
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(15, 24, 36, 0.98), rgba(9, 16, 25, 0.98)) !important;
-  backdrop-filter: blur(18px);
+  background: linear-gradient(180deg, rgba(42, 42, 42, 0.98), rgba(22, 22, 22, 0.98)) !important;
+  backdrop-filter: none;
   box-shadow: var(--vm-shadow);
 }
 
@@ -45,9 +44,9 @@ body,
 [class*="libraryleftnav_"],
 [class*="navtree_"],
 [class*="leftcolumn_"] {
-  background: linear-gradient(180deg, rgba(11, 20, 30, 0.96), rgba(8, 14, 22, 0.96)) !important;
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0.98), rgba(22, 22, 22, 0.98)) !important;
   border-right: 1px solid var(--vm-border) !important;
-  backdrop-filter: blur(16px);
+  backdrop-filter: none;
 }
 
 [class*="gamelistbar_Container_"] {
@@ -74,7 +73,7 @@ body,
 [class*="downloads_SectionItem_"] {
   margin: 3px 8px;
   border: 1px solid transparent;
-  border-radius: 12px !important;
+  border-radius: var(--vm-radius-sm) !important;
 }
 
 [class*="gamelistentry_Container_"]:hover,
@@ -91,7 +90,7 @@ body,
 [class*="pagedsettings_Active_"],
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] {
   border-color: var(--vm-border-strong) !important;
-  background: linear-gradient(90deg, rgba(140, 207, 255, 0.18), rgba(140, 207, 255, 0.05)) !important;
+  background: linear-gradient(90deg, rgba(0, 120, 215, 0.2), rgba(0, 120, 215, 0.05)) !important;
   box-shadow: inset 2px 0 0 var(--vm-accent);
 }
 
@@ -172,8 +171,8 @@ h3 {
 [class*="updates_Container_"] {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
-  backdrop-filter: blur(16px);
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.98), rgba(24, 24, 24, 0.98)) !important;
+  backdrop-filter: none;
   box-shadow: var(--vm-shadow);
 }
 
@@ -218,7 +217,7 @@ h3 {
   padding: var(--vm-surface-pad-md) 14px !important;
   gap: var(--vm-gap-sm);
   align-items: center;
-  background: linear-gradient(180deg, rgba(20, 31, 43, 0.96), rgba(11, 18, 28, 0.98)) !important;
+  background: linear-gradient(180deg, rgba(46, 46, 46, 0.98), rgba(29, 29, 29, 0.98)) !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinksSection_"] {
@@ -314,8 +313,8 @@ h3 {
 
 [class*="appdetailscommunityfeed_CommunityItem_"]:hover,
 [class*="appactivityday_Event_UniqueBorder_"]:hover {
-  background: rgba(19, 29, 40, 0.92) !important;
-  border-color: rgba(140, 207, 255, 0.18) !important;
+  background: rgba(48, 48, 48, 0.96) !important;
+  border-color: rgba(0, 120, 215, 0.24) !important;
 }
 
 [class*="appdetailsplaysection_PlayBarLabel_"],
@@ -408,7 +407,7 @@ h3 {
 [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-md) !important;
-  background: var(--vm-panel-strong) !important;
+  background: var(--vm-panel-elevated) !important;
   box-shadow: var(--vm-shadow);
 }
 
@@ -418,7 +417,7 @@ h3 {
 .DesktopUI [class*="Dropdown"],
 .DesktopUI [class*="dropdown"] {
   border-radius: var(--vm-radius-md) !important;
-  background: var(--vm-panel-strong) !important;
+  background: var(--vm-panel-elevated) !important;
 }
 
 [class*="contextmenu_contextMenuItem_"],
@@ -436,8 +435,8 @@ h3 {
 
 [class*="ModalDialogPopup"],
 [class*="FullModalOverlay"] {
-  background: rgba(4, 8, 12, 0.68) !important;
-  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.72) !important;
+  backdrop-filter: none !important;
 }
 
 [class*="appdetails_"] img,
@@ -460,7 +459,7 @@ h3 {
 [class*="supernav_"],
 [class*="libraryglobalnav_"],
 [class*="topbarcontrols_"] {
-  background: linear-gradient(180deg, rgba(10, 17, 26, 0.94), rgba(7, 13, 21, 0.94)) !important;
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.96), rgba(24, 24, 24, 0.96)) !important;
   border-bottom: 1px solid var(--vm-border-soft) !important;
 }
 
@@ -494,8 +493,8 @@ h3 {
 [class*="supernav_Active_"],
 [class*="titlebarcontrols_Active_"],
 [class*="libraryglobalnav_Active_"] {
-  background: rgba(140, 207, 255, 0.12) !important;
-  border: 1px solid rgba(140, 207, 255, 0.18) !important;
+  background: rgba(0, 120, 215, 0.14) !important;
+  border: 1px solid rgba(0, 120, 215, 0.32) !important;
   color: var(--vm-text) !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }

@@ -1,10 +1,10 @@
 # Velvet Minimal
 
-Velvet Minimal is a Millennium theme for Steam built around a calmer desktop feel:
+Velvet Minimal is a Millennium theme for Steam rebuilt around a Windows 10 desktop feel:
 
-- graphite surfaces instead of harsh flat black
-- restrained mint accents for focus and primary actions
-- subtle, consistent rounding for panels, cards, inputs, and menus
+- square geometry across panels, buttons, menus, inputs, and library chrome
+- Segoe UI-inspired typography and classic Windows blue accents
+- dark charcoal surfaces with crisp borders instead of rounded glassy cards
 - matching treatment across the library, chat, web views, Big Picture, and notifications
 
 ## Install

@@ -13,7 +13,7 @@ body,
 
 body {
   background:
-    radial-gradient(circle at 12% 0%, rgba(105, 174, 247, 0.08), transparent 24%),
+    radial-gradient(circle at 0% 0%, rgba(0, 120, 215, 0.08), transparent 24%),
     linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
 }
 
@@ -29,7 +29,7 @@ body *:not(svg):not(path):not(img) {
 .header_area,
 .page_header_ctn,
 .apphub_HeaderTop {
-  background: linear-gradient(180deg, rgba(10, 17, 26, 0.94), rgba(7, 13, 21, 0.94)) !important;
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.96), rgba(24, 24, 24, 0.96)) !important;
   border-bottom: 1px solid var(--vm-border) !important;
   box-shadow: none !important;
 }
@@ -71,7 +71,7 @@ body *:not(svg):not(path):not(img) {
 .forum_post {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.98), rgba(24, 24, 24, 0.98)) !important;
   box-shadow: var(--vm-shadow) !important;
 }
 
@@ -82,8 +82,8 @@ body *:not(svg):not(path):not(img) {
 .profile_customization:hover,
 .commentthread_entry:hover,
 .market_listing_row:hover {
-  background: rgba(19, 29, 40, 0.92) !important;
-  border-color: rgba(140, 207, 255, 0.18) !important;
+  background: rgba(48, 48, 48, 0.96) !important;
+  border-color: rgba(0, 120, 215, 0.24) !important;
 }
 
 .pageheader,
@@ -165,9 +165,9 @@ select,
 .btn_green_white_innerfade,
 .btnv6_green_white_innerfade,
 .queue_btn_active:hover {
-  border-color: rgba(140, 207, 255, 0.4) !important;
+  border-color: rgba(0, 120, 215, 0.7) !important;
   background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
-  color: #07111a !important;
+  color: #ffffff !important;
 }
 
 .btn_medium > *,

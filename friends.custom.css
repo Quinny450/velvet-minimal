@@ -13,7 +13,7 @@
 
 .friendsui-container {
   background:
-    radial-gradient(circle at 0% 0%, rgba(105, 174, 247, 0.08), transparent 22%),
+    radial-gradient(circle at 0% 0%, rgba(0, 120, 215, 0.08), transparent 22%),
     linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
 }
 
@@ -31,8 +31,8 @@
   padding: 10px 12px !important;
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
-  backdrop-filter: blur(16px);
+  background: linear-gradient(180deg, rgba(38, 38, 38, 0.98), rgba(24, 24, 24, 0.98)) !important;
+  backdrop-filter: none;
   box-shadow: var(--vm-shadow-soft) !important;
 }
 
@@ -56,7 +56,7 @@
 .favoriteElement,
 .quickAccessFriend {
   border: 1px solid transparent !important;
-  border-radius: 12px !important;
+  border-radius: var(--vm-radius-sm) !important;
 }
 
 .friend,
@@ -102,7 +102,7 @@
 .friend.selected,
 .chatRoomTextChannel.Active,
 .chatRoomVoiceChannel.Active {
-  background: linear-gradient(90deg, rgba(140, 207, 255, 0.16), rgba(140, 207, 255, 0.05)) !important;
+  background: linear-gradient(90deg, rgba(0, 120, 215, 0.2), rgba(0, 120, 215, 0.04)) !important;
   border-color: var(--vm-border-strong) !important;
   box-shadow: inset 2px 0 0 var(--vm-accent) !important;
 }
@@ -179,7 +179,7 @@
 .offline ._1p_QrI3ixF-RAwnxad9pEm,
 .online ._1p_QrI3ixF-RAwnxad9pEm,
 .ingame ._1p_QrI3ixF-RAwnxad9pEm {
-  border-radius: 12px !important;
+  border-radius: var(--vm-radius-sm) !important;
 }
 
 .offline ._1p_QrI3ixF-RAwnxad9pEm {
@@ -187,17 +187,17 @@
 }
 
 .online ._1p_QrI3ixF-RAwnxad9pEm {
-  border: 1px solid rgba(140, 207, 255, 0.48) !important;
+  border: 1px solid rgba(0, 120, 215, 0.5) !important;
 }
 
 .ingame ._1p_QrI3ixF-RAwnxad9pEm {
-  border: 1px solid rgba(105, 174, 247, 0.68) !important;
+  border: 1px solid rgba(0, 120, 215, 0.7) !important;
 }
 
 .ChatUnreadMessageIndicator .chatUnreadCircle,
 .unreadMessageViolator {
   background: var(--vm-accent) !important;
-  color: #07111a !important;
+  color: #ffffff !important;
   border-radius: var(--vm-pill) !important;
 }
 
