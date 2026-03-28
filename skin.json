@@ -1,0 +1,13 @@
+{
+  "name": "Velvet Minimal",
+  "author": "Quinn & Codex",
+  "description": "A modern minimalist Millennium theme with calm contrast, subtle rounding, and satisfying focus states.",
+  "version": "1.0.0",
+  "tags": ["Minimal", "Modern", "Dark", "Clean"],
+  "github": {
+    "owner": "Quinny450",
+    "repo_name": "velvet-minimal"
+  },
+  "Steam-WebKit": "webkit.css",
+  "UseDefaultPatches": true
+}
