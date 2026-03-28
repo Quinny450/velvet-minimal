@@ -11,6 +11,12 @@ body,
   color: var(--vm-text) !important;
 }
 
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(105, 174, 247, 0.08), transparent 24%),
+    linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
+}
+
 body,
 body *:not(svg):not(path):not(img) {
   font-family: var(--vm-font) !important;
@@ -23,7 +29,7 @@ body *:not(svg):not(path):not(img) {
 .header_area,
 .page_header_ctn,
 .apphub_HeaderTop {
-  background: rgba(13, 19, 27, 0.92) !important;
+  background: linear-gradient(180deg, rgba(10, 17, 26, 0.94), rgba(7, 13, 21, 0.94)) !important;
   border-bottom: 1px solid var(--vm-border) !important;
   box-shadow: none !important;
 }
@@ -65,7 +71,7 @@ body *:not(svg):not(path):not(img) {
 .forum_post {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(15, 24, 36, 0.96), rgba(12, 20, 31, 0.96)) !important;
+  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
   box-shadow: var(--vm-shadow) !important;
 }
 
@@ -77,7 +83,7 @@ body *:not(svg):not(path):not(img) {
 .commentthread_entry:hover,
 .market_listing_row:hover {
   background: rgba(19, 29, 40, 0.92) !important;
-  border-color: rgba(117, 196, 255, 0.18) !important;
+  border-color: rgba(140, 207, 255, 0.18) !important;
 }
 
 .pageheader,
@@ -103,6 +109,57 @@ body *:not(svg):not(path):not(img) {
 .persona_name_text_content,
 .commentthread_comment_author {
   color: var(--vm-text-muted) !important;
+}
+
+.wishlist_row,
+.review_box_content,
+.commentthread_entry,
+.forum_post,
+.market_listing_row,
+.game_area_purchase_game,
+.game_area_description,
+.game_meta_data,
+.apphub_Card,
+.inventory_iteminfo,
+.tradeoffer,
+.profile_customization,
+.profile_header {
+  padding: 16px 18px !important;
+}
+
+input,
+textarea,
+select,
+.filter_search_box,
+.commentthread_textarea,
+.market_search_sidebar_contents input {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  color: var(--vm-text) !important;
+}
+
+.btn_medium,
+.btnv6_blue_hoverfade,
+.btn_darkblue_white_innerfade,
+.btnv6_grey_black,
+.queue_btn_active,
+.pagebtn,
+.forum_topic_reply_link,
+.commentthread_btn {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-pill) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)) !important;
+  color: var(--vm-text) !important;
+  box-shadow: none !important;
+}
+
+.btn_green_white_innerfade,
+.btnv6_green_white_innerfade,
+.queue_btn_active:hover {
+  border-color: rgba(140, 207, 255, 0.4) !important;
+  background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
+  color: #07111a !important;
 }
 
 img,

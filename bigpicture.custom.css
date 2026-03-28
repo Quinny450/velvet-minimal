@@ -6,6 +6,12 @@ body {
   color: var(--vm-text) !important;
 }
 
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(105, 174, 247, 0.08), transparent 24%),
+    linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
+}
+
 body,
 body *:not(svg):not(path):not(img) {
   font-family: var(--vm-font) !important;
@@ -26,7 +32,7 @@ article,
 [class*="Container"] {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: var(--vm-panel) !important;
+  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
   box-shadow: var(--vm-shadow) !important;
 }
 
@@ -35,6 +41,7 @@ button,
 [class*="Button"],
 [class*="button"] {
   border-radius: var(--vm-pill) !important;
+  min-height: 42px;
 }
 
 [class*="Play"],
@@ -42,9 +49,9 @@ button,
 [class*="Confirm"],
 [class*="Install"],
 [class*="Action"] {
-  border-color: rgba(166, 243, 217, 0.28) !important;
+  border-color: rgba(140, 207, 255, 0.4) !important;
   background: linear-gradient(135deg, var(--vm-accent) 0%, var(--vm-accent-2) 100%) !important;
-  color: #092018 !important;
+  color: #07111a !important;
 }
 
 input,
@@ -55,4 +62,12 @@ select,
 [class*="Poster"],
 [class*="poster"] {
   border-radius: var(--vm-radius-md) !important;
+}
+
+[class*="Tile"]:hover,
+[class*="tile"]:hover,
+[class*="Poster"]:hover,
+[class*="poster"]:hover {
+  border-color: rgba(140, 207, 255, 0.18) !important;
+  background: rgba(140, 207, 255, 0.06) !important;
 }

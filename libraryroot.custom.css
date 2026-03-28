@@ -19,17 +19,18 @@ body,
 
 .DesktopUI {
   background:
-    radial-gradient(circle at 14% 0%, rgba(102, 182, 255, 0.08), transparent 24%),
+    radial-gradient(circle at 14% 0%, rgba(105, 174, 247, 0.09), transparent 24%),
+    radial-gradient(circle at 100% 18%, rgba(140, 207, 255, 0.05), transparent 22%),
     linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
 }
 
 [class*="rootmenu_RootMenuBar_"] {
-  margin: 10px 0 10px 10px;
-  padding: 8px;
+  margin: 12px 0 12px 12px;
+  padding: 10px;
   border: 1px solid var(--vm-border);
   border-radius: var(--vm-radius-lg) !important;
-  background: var(--vm-panel-strong) !important;
-  backdrop-filter: blur(14px);
+  background: linear-gradient(180deg, rgba(15, 24, 36, 0.98), rgba(9, 16, 25, 0.98)) !important;
+  backdrop-filter: blur(18px);
   box-shadow: var(--vm-shadow);
 }
 
@@ -44,31 +45,32 @@ body,
 [class*="libraryleftnav_"],
 [class*="navtree_"],
 [class*="leftcolumn_"] {
-  background: rgba(9, 18, 28, 0.9) !important;
+  background: linear-gradient(180deg, rgba(11, 20, 30, 0.96), rgba(8, 14, 22, 0.96)) !important;
   border-right: 1px solid var(--vm-border) !important;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
 }
 
 [class*="gamelistbar_Container_"] {
-  padding: 6px 0 10px;
+  padding: 8px 0 14px;
 }
 
 [class*="gamelistbar_GameListHomeAndSearch_"],
 [class*="gamelistsearchbar_Container_"],
 [class*="gamelistdropdown_Bar_"] {
-  margin: 0 10px 10px !important;
+  margin: 0 12px 12px !important;
 }
 
 [class*="gamelistentry_Container_"] {
-  min-height: 32px;
-  padding: 2px 8px;
+  min-height: 36px;
+  padding: 4px 10px;
+  gap: 10px;
 }
 
 [class*="gamelistentry_Container_"],
 [class*="gamelistsectionheader_Container_"],
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
 [class*="downloads_SectionItem_"] {
-  margin: 3px 10px;
+  margin: 4px 10px;
   border: 1px solid transparent;
   border-radius: 12px !important;
 }
@@ -78,6 +80,7 @@ body,
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="Active_"]):hover,
 [class*="downloads_SectionItem_"]:hover {
   background: var(--vm-hover) !important;
+  border-color: var(--vm-border-soft) !important;
 }
 
 [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
@@ -86,7 +89,8 @@ body,
 [class*="pagedsettings_Active_"],
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] {
   border-color: var(--vm-border-strong) !important;
-  background: linear-gradient(90deg, rgba(117, 196, 255, 0.2), rgba(117, 196, 255, 0.06)) !important;
+  background: linear-gradient(90deg, rgba(140, 207, 255, 0.18), rgba(140, 207, 255, 0.05)) !important;
+  box-shadow: inset 2px 0 0 var(--vm-accent);
 }
 
 .DesktopUI [class*="Panel"],
@@ -119,8 +123,7 @@ body,
 [class*="library_AppDetailsTransitionGroup_"],
 [class*="appdetails_InnerContainer_"],
 [class*="appdetails_Container_"] {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 14px 22px 24px !important;
 }
 
 [class*="gamelistsectionheader_SectionHeaderContent_"],
@@ -167,8 +170,8 @@ h3 {
 [class*="updates_Container_"] {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(15, 24, 36, 0.96), rgba(12, 20, 31, 0.96)) !important;
-  backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
+  backdrop-filter: blur(16px);
   box-shadow: var(--vm-shadow);
 }
 
@@ -188,28 +191,45 @@ h3 {
 }
 
 [class*="appdetailsheader_HeaderV6Container_"] {
-  margin-bottom: var(--vm-gap-lg);
+  margin-bottom: var(--vm-gap-xl);
   overflow: hidden;
+  border-radius: var(--vm-radius-xl) !important;
+}
+
+[class*="appdetailsheader_Background_"] {
+  position: relative;
+  isolation: isolate;
+}
+
+[class*="appdetailsheader_Background_"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6, 10, 16, 0.1), rgba(6, 10, 16, 0.42) 72%, rgba(6, 10, 16, 0.64) 100%),
+    linear-gradient(90deg, rgba(6, 10, 16, 0.14), transparent 28%, transparent 72%, rgba(6, 10, 16, 0.26));
+  pointer-events: none;
 }
 
 [class*="appdetailsplaysection_PlayBar_"] {
-  margin: 14px 18px 18px !important;
-  padding: 16px 18px !important;
+  margin: 16px 20px 20px !important;
+  padding: 18px 20px !important;
   gap: var(--vm-gap-md);
+  background: linear-gradient(180deg, rgba(20, 31, 43, 0.96), rgba(11, 18, 28, 0.98)) !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinksSection_"] {
-  margin: 0 18px 18px !important;
-  padding: 10px 12px !important;
+  margin: 0 20px 20px !important;
+  padding: 12px 14px !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinkInner_"] {
-  padding: 10px 12px !important;
+  padding: 11px 14px !important;
   border-radius: var(--vm-radius-sm) !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinkInner_"]:hover {
-  background: rgba(117, 196, 255, 0.08) !important;
+  background: var(--vm-accent-soft) !important;
 }
 
 [class*="appdetailssection_Section_"],
@@ -219,21 +239,21 @@ h3 {
 [class*="appactivityday_Event_UniqueBorder_"],
 [class*="reviewedapp_"],
 [class*="downloads_SectionItem_"] {
-  margin-bottom: var(--vm-gap-lg) !important;
+  margin-bottom: var(--vm-gap-xl) !important;
 }
 
 [class*="appdetailssection_Section_"] {
-  padding: 18px 20px !important;
+  padding: 20px 22px !important;
 }
 
 [class*="appdetailssection_Section_"] > * + * {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 [class*="appdetailsfriendssection_"],
 [class*="appdetailssection_RightColumnSection_"],
 [class*="appdetailssection_SidebarSection_"] {
-  padding: 14px 16px !important;
+  padding: 16px 18px !important;
 }
 
 [class*="appdetailssection_HomeContainer_"],
@@ -246,7 +266,7 @@ h3 {
 [class*="appdetailssection_Title_"],
 [class*="appactivityday_EventHeading_"],
 [class*="appdetailsfriendssection_Title_"] {
-  margin-bottom: 10px !important;
+  margin-bottom: 12px !important;
 }
 
 .DesktopUI [class*="Header"],
@@ -261,7 +281,7 @@ h3 {
 [class*="appdetailscommunityfeed_CommunityItem_"]:hover,
 [class*="appactivityday_Event_UniqueBorder_"]:hover {
   background: rgba(19, 29, 40, 0.92) !important;
-  border-color: rgba(117, 196, 255, 0.18) !important;
+  border-color: rgba(140, 207, 255, 0.18) !important;
 }
 
 [class*="appdetailsplaysection_PlayBarLabel_"],
@@ -281,7 +301,7 @@ h3 {
 [class*="appdetailsplaysection_LastPlayed_"],
 [class*="appdetailsplaysection_Playtime_"],
 [class*="appdetailsplaysection_Details_"] {
-  padding-right: 14px;
+  padding-right: 16px;
 }
 
 [class*="appdetailsplaysection_PlayBar_"] button.DialogButton,
@@ -374,7 +394,8 @@ h3 {
 [class*="supernav_"],
 [class*="libraryglobalnav_"],
 [class*="topbarcontrols_"] {
-  background: rgba(7, 14, 22, 0.88) !important;
+  background: linear-gradient(180deg, rgba(10, 17, 26, 0.94), rgba(7, 13, 21, 0.94)) !important;
+  border-bottom: 1px solid var(--vm-border-soft) !important;
 }
 
 [class*="supernav_Tabs_"],
@@ -389,39 +410,48 @@ h3 {
 [class*="titlebarcontrols_Tab_"],
 [class*="libraryglobalnav_Tab_"],
 [class*="supernav_Label_"] {
-  min-height: 32px;
-  padding: 0 12px !important;
+  min-height: 34px;
+  padding: 0 14px !important;
   border-radius: var(--vm-radius-sm) !important;
+  color: var(--vm-text-muted) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
 }
 
 [class*="supernav_Tab_"]:hover,
 [class*="titlebarcontrols_Tab_"]:hover,
 [class*="libraryglobalnav_Tab_"]:hover {
-  background: rgba(117, 196, 255, 0.08) !important;
+  background: var(--vm-accent-soft) !important;
 }
 
 [class*="supernav_Active_"],
 [class*="titlebarcontrols_Active_"],
 [class*="libraryglobalnav_Active_"] {
-  background: rgba(117, 196, 255, 0.12) !important;
+  background: rgba(140, 207, 255, 0.12) !important;
+  border: 1px solid rgba(140, 207, 255, 0.18) !important;
   color: var(--vm-text) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 [class*="gamelistsearchbar_Container_"] .DialogTextInputBase,
 [class*="gamelistsearchbar_Container_"] ._DialogInputContainer,
 [class*="gamelistdropdown_Bar_"] ._DialogInputContainer {
-  min-height: 36px;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  min-height: 38px;
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--vm-border) !important;
 }
 
 [class*="gamelistdropdown_Bar_"] {
   padding-top: 4px !important;
+  border-radius: var(--vm-radius-md) !important;
 }
 
 [class*="appdetailscommunityfeed_CommunityItem_"],
 [class*="appactivityday_Event_UniqueBorder_"] {
-  padding: 12px 14px !important;
+  padding: 14px 16px !important;
 }
 
 [class*="appdetailssection_RightColumnSection_"],
@@ -436,7 +466,10 @@ h3 {
 [class*="appdetailsnotessection_"] .DialogTextInputBase,
 [class*="appdetailsactivitysection_"] .DialogTextInputBase,
 [class*="appdetailscommunityfeed_"] .DialogTextInputBase {
-  min-height: 40px;
+  min-height: 44px;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
 }
 
 [class*="appdetailssection_Section_"] [class*="DialogButton"],
@@ -444,10 +477,25 @@ h3 {
   margin-top: 2px;
 }
 
+[class*="appdetailsscreenshotssection_"] img,
+[class*="appdetailsscreenshotssection_"] [class*="Image"],
+[class*="appdetailsfriendssection_"] [class*="Avatar"] {
+  border: 1px solid var(--vm-border-soft) !important;
+}
+
+[class*="downloads_ProgressBar_"],
+[class*="downloadprogress_Progress_"],
+[class*="downloads_Progress_"],
+[class*="downloads_ActiveProgress_"] {
+  border-radius: var(--vm-pill) !important;
+  background: linear-gradient(90deg, var(--vm-accent), var(--vm-accent-2)) !important;
+}
+
 [class*="footer_"],
 [class*="downloadsbutton_"],
 [class*="downloadsummary_"],
 [class*="statusbar_"] {
-  background: rgba(7, 14, 22, 0.9) !important;
+  background: linear-gradient(180deg, rgba(10, 16, 24, 0.94), rgba(8, 13, 20, 0.94)) !important;
   border-top: 1px solid var(--vm-border) !important;
+  min-height: 42px;
 }

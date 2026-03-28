@@ -11,6 +11,12 @@
   color: var(--vm-text) !important;
 }
 
+.friendsui-container {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(105, 174, 247, 0.08), transparent 22%),
+    linear-gradient(180deg, var(--vm-bg-2) 0%, var(--vm-bg) 100%) !important;
+}
+
 .friendsui-container,
 .friendsui-container *:not(svg):not(path):not(img) {
   font-family: var(--vm-font) !important;
@@ -24,8 +30,9 @@
 .VoiceRoomChatTitle {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: linear-gradient(180deg, rgba(15, 24, 36, 0.96), rgba(12, 20, 31, 0.96)) !important;
-  backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--vm-shadow-soft) !important;
 }
 
 .statusHeaderGlow,
@@ -47,7 +54,17 @@
 .chatRoomListGroupItem .ContextMenuButton,
 .favoriteElement,
 .quickAccessFriend {
+  border: 1px solid transparent !important;
   border-radius: 12px !important;
+}
+
+.friend,
+.ChatRoomListGroupItem,
+.chatRoomTextChannel,
+.chatRoomVoiceChannel,
+.favoriteElement,
+.quickAccessFriend {
+  padding: 8px 10px !important;
 }
 
 .friend:hover,
@@ -65,6 +82,7 @@
 .ChatRoomListGroupItem:hover,
 .chatTabList .X2iywwN7fcdh9zXpXVsrk:hover {
   background: var(--vm-hover) !important;
+  border-color: var(--vm-border-soft) !important;
 }
 
 .chatRoomTextChannel:hover,
@@ -72,6 +90,17 @@
 .favoriteElement:hover,
 .quickAccessFriend:hover {
   background: var(--vm-hover) !important;
+  border-color: var(--vm-border-soft) !important;
+}
+
+.activeTab,
+.friend.activeFriend,
+.friend.selected,
+.chatRoomTextChannel.Active,
+.chatRoomVoiceChannel.Active {
+  background: linear-gradient(90deg, rgba(140, 207, 255, 0.16), rgba(140, 207, 255, 0.05)) !important;
+  border-color: var(--vm-border-strong) !important;
+  box-shadow: inset 2px 0 0 var(--vm-accent) !important;
 }
 
 .groupName,
@@ -110,6 +139,15 @@
   border-radius: var(--vm-radius-md) !important;
 }
 
+.chatEntry,
+.chatWindow .chatEntry > .compactableHeight,
+.chatHistory,
+.chatScrollContainer,
+.VoiceRoomChatWindow {
+  border: 1px solid var(--vm-border-soft) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
 .chatImageFull,
 .chatFileUploadPreviewContainer,
 .chatFileUploadProgressContainer,
@@ -134,17 +172,17 @@
 }
 
 .online ._1p_QrI3ixF-RAwnxad9pEm {
-  border: 1px solid rgba(166, 243, 217, 0.48) !important;
+  border: 1px solid rgba(140, 207, 255, 0.48) !important;
 }
 
 .ingame ._1p_QrI3ixF-RAwnxad9pEm {
-  border: 1px solid rgba(114, 223, 189, 0.68) !important;
+  border: 1px solid rgba(105, 174, 247, 0.68) !important;
 }
 
 .ChatUnreadMessageIndicator .chatUnreadCircle,
 .unreadMessageViolator {
   background: var(--vm-accent) !important;
-  color: #071a14 !important;
+  color: #07111a !important;
   border-radius: var(--vm-pill) !important;
 }
 
@@ -157,13 +195,23 @@
 
 .friendlistListContainer,
 .chatRoomListContainer {
-  padding: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02) !important;
 }
 
 .chatHeader,
 .chatEntryControls,
 .titleBarContainer.ChatTabs {
-  margin: 8px;
+  margin: 10px 10px 0;
+  padding: 12px 14px;
+}
+
+.chatWindow {
+  padding: 10px;
+}
+
+.chatEntryControls {
+  margin-top: 12px;
 }
 
 .chatWindow .DialogButton,
@@ -171,4 +219,15 @@
 .friendsui-container .DialogButton,
 .friendsui-container button {
   border-radius: var(--vm-pill) !important;
+  min-height: 38px;
+}
+
+.friendsui-container .DialogTextInputBase,
+._1tiuYeMmTc9DMG4mhgaQ5w._DialogInputContainer,
+.chatWindow textarea,
+.chatWindow input {
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  color: var(--vm-text) !important;
 }

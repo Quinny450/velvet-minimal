@@ -6,9 +6,22 @@
 [class*="standardtemplates_PinnedTemplateWeb_"] {
   border: 1px solid var(--vm-border) !important;
   border-radius: var(--vm-radius-lg) !important;
-  background: var(--vm-panel-strong) !important;
+  background: linear-gradient(180deg, rgba(17, 28, 40, 0.96), rgba(10, 18, 28, 0.98)) !important;
   backdrop-filter: blur(20px);
   box-shadow: var(--vm-shadow) !important;
+  overflow: hidden;
+  position: relative;
+}
+
+[class*="desktoptoasts_DesktopToastPopup_"]::before,
+[class*="standardtemplates_StandardTemplateContainer_"]::before,
+[class*="standardtemplates_PinnedTemplateDesktop_"]::before,
+[class*="standardtemplates_PinnedTemplateWeb_"]::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--vm-accent), rgba(140, 207, 255, 0.15));
 }
 
 [class*="desktoptoasts_DesktopToastBackground_"] {
