@@ -1,0 +1,35 @@
+@import url("shared.css");
+
+[class*="desktoptoasts_DesktopToastPopup_"],
+[class*="standardtemplates_StandardTemplateContainer_"],
+[class*="standardtemplates_PinnedTemplateDesktop_"],
+[class*="standardtemplates_PinnedTemplateWeb_"] {
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-lg) !important;
+  background: var(--vm-panel-strong) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--vm-shadow) !important;
+}
+
+[class*="desktoptoasts_DesktopToastBackground_"] {
+  display: none !important;
+}
+
+[class*="standardtemplates_Title_"],
+[class*="standardtemplates_GroupMessageUserName_"],
+[class*="notificationcontent_Name_"] {
+  color: var(--vm-text) !important;
+}
+
+[class*="standardtemplates_StandardNotificationDescription_"],
+[class*="standardtemplates_StandardNotificationSubText_"],
+[class*="standardtemplates_Timestamp_"],
+[class*="standardtemplates_Icon_"] {
+  color: var(--vm-text-muted) !important;
+}
+
+[class*="standardtemplates_OnlineTitle_"],
+[class*="notificationcontent_FriendOnlineColor_"],
+[class*="standardtemplates_FriendInGameAppColor_"] {
+  color: var(--vm-accent) !important;
+}
