@@ -67,8 +67,8 @@
 .quickAccessFriend {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 7px 10px !important;
+  gap: 6px;
+  padding: 6px 8px !important;
 }
 
 .friend:hover,
@@ -155,12 +155,12 @@
 
 .chatEntry,
 .chatWindow .chatEntry > .compactableHeight {
-  padding: 10px 12px !important;
+  padding: 8px 10px !important;
 }
 
 .chatHistory,
 .chatScrollContainer {
-  padding: 6px;
+  padding: 4px;
 }
 
 .chatImageFull,

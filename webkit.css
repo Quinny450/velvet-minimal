@@ -126,7 +126,7 @@ body *:not(svg):not(path):not(img) {
 .tradeoffer,
 .profile_customization,
 .profile_header {
-  padding: 14px 16px !important;
+  padding: 12px 14px !important;
 }
 
 input,
