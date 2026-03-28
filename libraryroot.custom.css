@@ -86,7 +86,7 @@ body,
 [class*="pagedsettings_Active_"],
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] {
   border-color: var(--vm-border-strong) !important;
-  background: linear-gradient(90deg, rgba(166, 243, 217, 0.18), rgba(166, 243, 217, 0.06)) !important;
+  background: linear-gradient(90deg, rgba(117, 196, 255, 0.2), rgba(117, 196, 255, 0.06)) !important;
 }
 
 .DesktopUI [class*="Panel"],
@@ -115,6 +115,14 @@ body,
   gap: var(--vm-gap-lg);
 }
 
+[class*="contentmanagement_LibraryContent_"],
+[class*="library_AppDetailsTransitionGroup_"],
+[class*="appdetails_InnerContainer_"],
+[class*="appdetails_Container_"] {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 [class*="gamelistsectionheader_SectionHeaderContent_"],
 [class*="gamelistsectionheader_SectionName_"],
 [class*="gamelistentry_AppName_"],
@@ -125,6 +133,19 @@ h2,
 h3 {
   color: var(--vm-text) !important;
   letter-spacing: -0.01em;
+}
+
+[class*="gamelistentry_AppName_"] {
+  font-size: 13px !important;
+}
+
+[class*="gamelistsectionheader_SectionName_"],
+[class*="downloads_SectionTitle_"],
+[class*="appdetailsfriendssection_Title_"],
+[class*="appdetailsnotessection_Title_"] {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 12px !important;
 }
 
 [class*="appdetails_"],
@@ -205,6 +226,10 @@ h3 {
   padding: 18px 20px !important;
 }
 
+[class*="appdetailssection_Section_"] > * + * {
+  margin-top: 10px;
+}
+
 [class*="appdetailsfriendssection_"],
 [class*="appdetailssection_RightColumnSection_"],
 [class*="appdetailssection_SidebarSection_"] {
@@ -236,7 +261,7 @@ h3 {
 [class*="appdetailscommunityfeed_CommunityItem_"]:hover,
 [class*="appactivityday_Event_UniqueBorder_"]:hover {
   background: rgba(19, 29, 40, 0.92) !important;
-  border-color: rgba(166, 243, 217, 0.16) !important;
+  border-color: rgba(117, 196, 255, 0.18) !important;
 }
 
 [class*="appdetailsplaysection_PlayBarLabel_"],
@@ -350,4 +375,79 @@ h3 {
 [class*="libraryglobalnav_"],
 [class*="topbarcontrols_"] {
   background: rgba(7, 14, 22, 0.88) !important;
+}
+
+[class*="supernav_Tabs_"],
+[class*="supernav_Tab_"],
+[class*="titlebarcontrols_Nav_"],
+[class*="titlebarcontrols_UrlBar_"],
+[class*="libraryglobalnav_GlobalNav_"] {
+  gap: var(--vm-gap-sm);
+}
+
+[class*="supernav_Tab_"],
+[class*="titlebarcontrols_Tab_"],
+[class*="libraryglobalnav_Tab_"],
+[class*="supernav_Label_"] {
+  min-height: 32px;
+  padding: 0 12px !important;
+  border-radius: var(--vm-radius-sm) !important;
+}
+
+[class*="supernav_Tab_"]:hover,
+[class*="titlebarcontrols_Tab_"]:hover,
+[class*="libraryglobalnav_Tab_"]:hover {
+  background: rgba(117, 196, 255, 0.08) !important;
+}
+
+[class*="supernav_Active_"],
+[class*="titlebarcontrols_Active_"],
+[class*="libraryglobalnav_Active_"] {
+  background: rgba(117, 196, 255, 0.12) !important;
+  color: var(--vm-text) !important;
+}
+
+[class*="gamelistsearchbar_Container_"] .DialogTextInputBase,
+[class*="gamelistsearchbar_Container_"] ._DialogInputContainer,
+[class*="gamelistdropdown_Bar_"] ._DialogInputContainer {
+  min-height: 36px;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+[class*="gamelistdropdown_Bar_"] {
+  padding-top: 4px !important;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem_"],
+[class*="appactivityday_Event_UniqueBorder_"] {
+  padding: 12px 14px !important;
+}
+
+[class*="appdetailssection_RightColumnSection_"],
+[class*="appdetailssection_SidebarSection_"],
+[class*="appdetailsfriendssection_"],
+[class*="appdetailsnotessection_"],
+[class*="appdetailsscreenshotssection_"],
+[class*="appdetailsgameinfosection_"] {
+  margin-bottom: var(--vm-gap-lg) !important;
+}
+
+[class*="appdetailsnotessection_"] .DialogTextInputBase,
+[class*="appdetailsactivitysection_"] .DialogTextInputBase,
+[class*="appdetailscommunityfeed_"] .DialogTextInputBase {
+  min-height: 40px;
+}
+
+[class*="appdetailssection_Section_"] [class*="DialogButton"],
+[class*="appdetailssection_Section_"] button {
+  margin-top: 2px;
+}
+
+[class*="footer_"],
+[class*="downloadsbutton_"],
+[class*="downloadsummary_"],
+[class*="statusbar_"] {
+  background: rgba(7, 14, 22, 0.9) !important;
+  border-top: 1px solid var(--vm-border) !important;
 }
